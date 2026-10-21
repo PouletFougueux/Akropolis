@@ -1,0 +1,702 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e33f25f396de14682afeb71b7b77fa, type: 3}
+  m_Name: SoundBank
+  m_EditorClassIdentifier: Assembly-CSharp::Akropolis.Audio.SoundBank
+  SfxVolume: 0.9
+  Effects:
+  - Name: UiHover
+    Id: 0
+    Clips:
+    - {fileID: 8300000, guid: 6bf66ebfcc157a74088e86e075fb74b4, type: 3}
+    - {fileID: 8300000, guid: 2653fff6d1a6f5446a973dd2aa450d33, type: 3}
+    Volume: 0.25
+    PitchMin: 0.95
+    PitchMax: 1.1
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: UiClick
+    Id: 1
+    Clips:
+    - {fileID: 8300000, guid: 6c845dcb877b225449b89b6e300e63bf, type: 3}
+    - {fileID: 8300000, guid: a4b943c84bb0fda429c8961a16ae34c4, type: 3}
+    - {fileID: 8300000, guid: f456c2a86c6413d4abd40ec0761b2ac2, type: 3}
+    - {fileID: 8300000, guid: b44bebc42dac60d4ba1df91f77cc3824, type: 3}
+    - {fileID: 8300000, guid: 9df92d1682c5ddb49844919106c9d8d6, type: 3}
+    Volume: 0.6
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.03
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: GameStart
+    Id: 2
+    Clips:
+    - {fileID: 8300000, guid: 02dc94edc2fab664ca34b50c83fa3e4c, type: 3}
+    Volume: 0.8
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.2
+    MaxDuration: 1.4
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: TurnStart
+    Id: 3
+    Clips:
+    - {fileID: 8300000, guid: ace1c22de803c904d9880abdbecaf3ed, type: 3}
+    Volume: 0.5
+    PitchMin: 0.98
+    PitchMax: 1.02
+    Cooldown: 0.3
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: HoverTokens
+    Id: 4
+    Clips:
+    - {fileID: 8300000, guid: ac9839207c243f74a96de152481c3c06, type: 3}
+    - {fileID: 8300000, guid: 01ca0d94fc7811d43a79bf20691c06e8, type: 3}
+    - {fileID: 8300000, guid: 8a07629232caaf9448e96f08778ffe92, type: 3}
+    - {fileID: 8300000, guid: 6060b57b8f123294b897798052e8dc83, type: 3}
+    Volume: 0.25
+    PitchMin: 1.05
+    PitchMax: 1.2
+    Cooldown: 0.08
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: TakeTokens
+    Id: 5
+    Clips:
+    - {fileID: 8300000, guid: 0e4546472945ec2468d9b185edebc7ff, type: 3}
+    - {fileID: 8300000, guid: 70a0c42f328666042844171ff41b02a4, type: 3}
+    - {fileID: 8300000, guid: 86be9d01d695e7d49845c355a830d705, type: 3}
+    - {fileID: 8300000, guid: dff25dde07c19b2418e4391cdf3842c1, type: 3}
+    - {fileID: 8300000, guid: 3537bda92fab501459dd99ae703da99f, type: 3}
+    - {fileID: 8300000, guid: 2be4e11120cb600458caa1f8a3eeab09, type: 3}
+    Volume: 0.85
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.1
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: SelectToken
+    Id: 6
+    Clips:
+    - {fileID: 8300000, guid: 99335b93e519f5a4fae1a07aa402e185, type: 3}
+    - {fileID: 8300000, guid: 6826cf364f3c8924eb5ae7c9d2a63e28, type: 3}
+    - {fileID: 8300000, guid: a3c53386265c1784287f13650af28a8c, type: 3}
+    Volume: 0.6
+    PitchMin: 1.1
+    PitchMax: 1.25
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: PlaceToken
+    Id: 7
+    Clips:
+    - {fileID: 8300000, guid: 45651abd06383c04caa6ccfbada29136, type: 3}
+    - {fileID: 8300000, guid: 8657d7b9c9a900542a5d0c08add9ade6, type: 3}
+    - {fileID: 8300000, guid: 7955fa3a38f765f489838fa0125efbb7, type: 3}
+    - {fileID: 8300000, guid: e92c11918f530f640ac68538783802d1, type: 3}
+    - {fileID: 8300000, guid: a96581fb51db0ff4eb6bef7177113030, type: 3}
+    - {fileID: 8300000, guid: 3bd61f3a15798e24388823c13da240f4, type: 3}
+    Volume: 0.9
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.04
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: CancelTokens
+    Id: 8
+    Clips:
+    - {fileID: 8300000, guid: ac9839207c243f74a96de152481c3c06, type: 3}
+    - {fileID: 8300000, guid: 01ca0d94fc7811d43a79bf20691c06e8, type: 3}
+    - {fileID: 8300000, guid: 8a07629232caaf9448e96f08778ffe92, type: 3}
+    - {fileID: 8300000, guid: 6060b57b8f123294b897798052e8dc83, type: 3}
+    Volume: 0.8
+    PitchMin: 0.9
+    PitchMax: 1
+    Cooldown: 0.1
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: Undo
+    Id: 9
+    Clips:
+    - {fileID: 8300000, guid: 9180069a4e77dcc4597fcefb8dcaca14, type: 3}
+    - {fileID: 8300000, guid: 6087d55fa19492846b71cf4dab040e23, type: 3}
+    - {fileID: 8300000, guid: 54c9797fd57a76247842ba1457fd1ad8, type: 3}
+    - {fileID: 8300000, guid: d1a7deefdd387c64d806543ca17cb014, type: 3}
+    Volume: 0.55
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: HoverCard
+    Id: 10
+    Clips:
+    - {fileID: 8300000, guid: 64379d6d9ce620948940cc6eed9f6ac8, type: 3}
+    - {fileID: 8300000, guid: 7a2f674d67f872540bc147c952865d8a, type: 3}
+    - {fileID: 8300000, guid: 33d14539d451eab4bb407ceeaccb6d0a, type: 3}
+    - {fileID: 8300000, guid: 82d91abd5d3a249499b6bdbfe850caff, type: 3}
+    - {fileID: 8300000, guid: fee310b259eb32447b49874dd13afd74, type: 3}
+    - {fileID: 8300000, guid: fa14853173d243a49998360190d494ed, type: 3}
+    - {fileID: 8300000, guid: be81a3ed0af785241bcbe7cb02d2c94e, type: 3}
+    - {fileID: 8300000, guid: 7947914ec07d1fc41bf116fd0f7c055a, type: 3}
+    Volume: 0.35
+    PitchMin: 1
+    PitchMax: 1.15
+    Cooldown: 0
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: TakeCard
+    Id: 11
+    Clips:
+    - {fileID: 8300000, guid: f9c4aae85f3ecd84f8272ffc4a4f2ee7, type: 3}
+    - {fileID: 8300000, guid: 2b09524a1de758748981243d0ae15185, type: 3}
+    Volume: 0.85
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.1
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: DealCard
+    Id: 12
+    Clips:
+    - {fileID: 8300000, guid: 2706ef293bedbe54a84097ffc2061853, type: 3}
+    - {fileID: 8300000, guid: 7aa085d9e1d7bdc45bc775f79dfa9a58, type: 3}
+    - {fileID: 8300000, guid: 7f686254fe94b2b469400856823a76be, type: 3}
+    - {fileID: 8300000, guid: 08df506295de34a4187fbf2f17e441b4, type: 3}
+    Volume: 0.7
+    PitchMin: 0.95
+    PitchMax: 1.08
+    Cooldown: 0.03
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: SelectCard
+    Id: 13
+    Clips:
+    - {fileID: 8300000, guid: 27e5db6b270653a4e9d226783940d5cb, type: 3}
+    - {fileID: 8300000, guid: ca115922bf3a82749a0210aaeb80bf36, type: 3}
+    - {fileID: 8300000, guid: 085fb85db95e46e4c8f11fcabf1e536d, type: 3}
+    - {fileID: 8300000, guid: f767f64e5eb470742b2c22f15123224b, type: 3}
+    Volume: 0.5
+    PitchMin: 1
+    PitchMax: 1.1
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: PlaceCube
+    Id: 14
+    Clips:
+    - {fileID: 8300000, guid: d508c8e788cc8b3469db389740945491, type: 3}
+    - {fileID: 8300000, guid: dfc3f961ee31f3e49ba221fef4f1540c, type: 3}
+    - {fileID: 8300000, guid: 27ca8ee2300db7d499e9afc026670196, type: 3}
+    - {fileID: 8300000, guid: b59761b701353ee40b2c76250b538901, type: 3}
+    Volume: 0.8
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: CardCompleted
+    Id: 15
+    Clips:
+    - {fileID: 8300000, guid: 24713d8df9b3b3a49b0b3190e736ccf2, type: 3}
+    Volume: 0.7
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.2
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: SpiritChosen
+    Id: 16
+    Clips:
+    - {fileID: 8300000, guid: 0284e8a867cbc5c49b7326e312abc24b, type: 3}
+    Volume: 0.7
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.2
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: Error
+    Id: 17
+    Clips:
+    - {fileID: 8300000, guid: 10baf66522aaa9f459c937362c940844, type: 3}
+    - {fileID: 8300000, guid: c1ad2815ca214034991a3cd26cdf2399, type: 3}
+    Volume: 0.45
+    PitchMin: 0.98
+    PitchMax: 1.02
+    Cooldown: 0.2
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: GameOver
+    Id: 18
+    Clips:
+    - {fileID: 8300000, guid: 65d3c59b8fccfd443b208afc548dab31, type: 3}
+    Volume: 0.7
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.5
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: ScoreItem
+    Id: 19
+    Clips:
+    - {fileID: 8300000, guid: 21c8f2a01dfe66c45be8a07bf41b8181, type: 3}
+    Volume: 0.55
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.02
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: Victory
+    Id: 20
+    Clips:
+    - {fileID: 8300000, guid: aeef2b302b564e6468cbcaa082164226, type: 3}
+    Volume: 0.9
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 1
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: Bell
+    Id: 21
+    Clips:
+    - {fileID: 8300000, guid: d475e71116da6824eb66483b9a1c6196, type: 3}
+    Volume: 0.8
+    PitchMin: 0.82
+    PitchMax: 1.18
+    Cooldown: 0
+    MaxDuration: 0
+    RareClip: {fileID: 8300000, guid: f044fbe48962efb4ab90a359c4a8931d, type: 3}
+    RareChance: 0.002
+  - Name: ChatMessage
+    Id: 22
+    Clips:
+    - {fileID: 8300000, guid: e473137a8a2765c46b771732f30c0a58, type: 3}
+    Volume: 0.5
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.15
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: Emote
+    Id: 23
+    Clips:
+    - {fileID: 8300000, guid: fb040813939e9f843a1cd4b81b05b0b5, type: 3}
+    - {fileID: 8300000, guid: 138bbe15da9f54f4bbccc7269f8134ce, type: 3}
+    Volume: 0.55
+    PitchMin: 0.95
+    PitchMax: 1.05
+    Cooldown: 0.15
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: RotateTile
+    Id: 24
+    Clips:
+    - {fileID: 8300000, guid: 64379d6d9ce620948940cc6eed9f6ac8, type: 3}
+    - {fileID: 8300000, guid: 7a2f674d67f872540bc147c952865d8a, type: 3}
+    - {fileID: 8300000, guid: 33d14539d451eab4bb407ceeaccb6d0a, type: 3}
+    Volume: 0.45
+    PitchMin: 1.15
+    PitchMax: 1.3
+    Cooldown: 0.04
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: StoneGain
+    Id: 25
+    Clips:
+    - {fileID: 8300000, guid: 99335b93e519f5a4fae1a07aa402e185, type: 3}
+    - {fileID: 8300000, guid: 6826cf364f3c8924eb5ae7c9d2a63e28, type: 3}
+    - {fileID: 8300000, guid: a3c53386265c1784287f13650af28a8c, type: 3}
+    Volume: 0.75
+    PitchMin: 1
+    PitchMax: 1.15
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: StonePay
+    Id: 26
+    Clips:
+    - {fileID: 8300000, guid: ac9839207c243f74a96de152481c3c06, type: 3}
+    - {fileID: 8300000, guid: 01ca0d94fc7811d43a79bf20691c06e8, type: 3}
+    - {fileID: 8300000, guid: 8a07629232caaf9448e96f08778ffe92, type: 3}
+    - {fileID: 8300000, guid: 6060b57b8f123294b897798052e8dc83, type: 3}
+    Volume: 0.7
+    PitchMin: 0.9
+    PitchMax: 1
+    Cooldown: 0.05
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  - Name: ChiefPass
+    Id: 27
+    Clips:
+    - {fileID: 8300000, guid: 0284e8a867cbc5c49b7326e312abc24b, type: 3}
+    Volume: 0.6
+    PitchMin: 1
+    PitchMax: 1
+    Cooldown: 0.2
+    MaxDuration: 0
+    RareClip: {fileID: 0}
+    RareChance: 0
+  Animals:
+  - Name: Crocodile
+    Animal: Crocodile
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Raie
+    Animal: Raie
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Truite
+    Animal: Truite
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Loutre
+    Animal: Loutre
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.5
+  - Name: Grenouille
+    Animal: Grenouille
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Canard
+    Animal: Canard
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Flamant rose
+    Animal: Flamant rose
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: "L\xE9zard"
+    Animal: "L\xE9zard"
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Souris
+    Animal: Souris
+    Clips:
+    - {fileID: 8300000, guid: 54398bedd23d3154d878a9c2a7416cfe, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Paon
+    Animal: Paon
+    Clips:
+    - {fileID: 8300000, guid: e859aed3eb9d0a04ba0777e60b70c35c, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: "\xC9cureuil"
+    Animal: "\xC9cureuil"
+    Clips:
+    - {fileID: 8300000, guid: 54398bedd23d3154d878a9c2a7416cfe, type: 3}
+    Volume: 0.72
+    Pitch: 1.2
+  - Name: "H\xE9risson"
+    Animal: "H\xE9risson"
+    Clips:
+    - {fileID: 8300000, guid: 54398bedd23d3154d878a9c2a7416cfe, type: 3}
+    Volume: 0.72
+    Pitch: 0.8
+  - Name: Abeille
+    Animal: Abeille
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Ours
+    Animal: Ours
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Lapin
+    Animal: Lapin
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.8
+  - Name: Ara
+    Animal: Ara
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Sanglier
+    Animal: Sanglier
+    Clips:
+    - {fileID: 8300000, guid: 529294a3626c7bd4293971ad2df79379, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Koala
+    Animal: Koala
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.3
+  - Name: Loup
+    Animal: Loup
+    Clips:
+    - {fileID: 8300000, guid: fcc9feda549eb924da9fb44041388e21, type: 3}
+    Volume: 0.66
+    Pitch: 1
+  - Name: "Martin-p\xEAcheur"
+    Animal: "Martin-p\xEAcheur"
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Manchot
+    Animal: Manchot
+    Clips:
+    - {fileID: 8300000, guid: 7ad7e33bf5868184ea1f35dfc190a9b8, type: 3}
+    - {fileID: 8300000, guid: a120bd68fd5ca654bb934140bb600ae6, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Chauve-souris
+    Animal: Chauve-souris
+    Clips:
+    - {fileID: 8300000, guid: a9f5b1cd1641d5142b6e8973569ee36d, type: 3}
+    - {fileID: 8300000, guid: 1ffddde9b23296440a055a473d5ddf54, type: 3}
+    - {fileID: 8300000, guid: 09ef15aad8c67a74b8b9519428c410c5, type: 3}
+    Volume: 0.72
+    Pitch: 1
+  - Name: Fennec
+    Animal: Fennec
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.6
+  - Name: Macaque
+    Animal: Macaque
+    Clips:
+    - {fileID: 8300000, guid: dad7ae1a072c94b45a69748b7d214ed4, type: 3}
+    - {fileID: 8300000, guid: 3045677c4c5ed1b45b6963d1c9d7a3ea, type: 3}
+    - {fileID: 8300000, guid: 148e85b81158f0f49894ee2bc0d24653, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Aigle
+    Animal: Aigle
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Suricate
+    Animal: Suricate
+    Clips:
+    - {fileID: 8300000, guid: 54398bedd23d3154d878a9c2a7416cfe, type: 3}
+    Volume: 0.72
+    Pitch: 1.1
+  - Name: Corbeau
+    Animal: Corbeau
+    Clips:
+    - {fileID: 8300000, guid: 0abb18472aedcfd4383d3a1b6a6f029a, type: 3}
+    Volume: 0.72
+    Pitch: 1
+  - Name: Lama
+    Animal: Lama
+    Clips:
+    - {fileID: 8300000, guid: 60a32c330ca94d3418b07be813efc896, type: 3}
+    - {fileID: 8300000, guid: dd05ceb92b314b143aae3914ac9ad1d6, type: 3}
+    Volume: 0.66
+    Pitch: 1.1
+  - Name: Renard arctique
+    Animal: Renard arctique
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.45
+  - Name: Raton laveur
+    Animal: Raton laveur
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.55
+  - Name: Coccinelle
+    Animal: Coccinelle
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: "Panth\xE8re"
+    Animal: "Panth\xE8re"
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.84
+    Pitch: 0.95
+  - Name: Lion
+    Animal: Lion
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.84
+    Pitch: 0.85
+  - Name: Papillon
+    Animal: Papillon
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Cerf
+    Animal: Cerf
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.2
+  - Name: Hibou
+    Animal: Hibou
+    Clips:
+    - {fileID: 8300000, guid: b67cd108c7787564282a0979994683ed, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Chat
+    Animal: Chat
+    Clips:
+    - {fileID: 8300000, guid: 6800a77f6dbd1c34abbd3468433b69bf, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Cigogne
+    Animal: Cigogne
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: "B\xE9lier"
+    Animal: "B\xE9lier"
+    Clips:
+    - {fileID: 8300000, guid: 7b591034b0a7df649af00af21b1ee98c, type: 3}
+    Volume: 0.84000003
+    Pitch: 0.9
+  - Name: Marmotte
+    Animal: Marmotte
+    Clips:
+    - {fileID: 8300000, guid: 54398bedd23d3154d878a9c2a7416cfe, type: 3}
+    Volume: 0.72
+    Pitch: 0.9
+  - Name: Libellule
+    Animal: Libellule
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  - Name: Tortue
+    Animal: Tortue
+    Clips: []
+    Volume: 0.8
+    Pitch: 1
+  Families:
+  - Name: Quadruped
+    Shape: 0
+    Clips:
+    - {fileID: 8300000, guid: f177be596d610bb459564080fc2ed0c6, type: 3}
+    - {fileID: 8300000, guid: 42634666771c2e9478b8d95b9282860e, type: 3}
+    Volume: 0.72
+    Pitch: 1.25
+  - Name: Bird
+    Shape: 1
+    Clips:
+    - {fileID: 8300000, guid: 68cf89b9dd30cd846af9b8ace154e376, type: 3}
+    - {fileID: 8300000, guid: f4276cbcd4d68584daf06458b8cd86b0, type: 3}
+    - {fileID: 8300000, guid: 6be1acda0d8628343936383b4b7fd445, type: 3}
+    Volume: 0.72
+    Pitch: 1
+  - Name: Fish
+    Shape: 2
+    Clips:
+    - {fileID: 8300000, guid: ee69a2954f8c8f64db5442c078cba401, type: 3}
+    - {fileID: 8300000, guid: da28c5b6df3db8043b4b48e7d72c2c98, type: 3}
+    - {fileID: 8300000, guid: 672ee800270ea064d9d4fd0f6ef282db, type: 3}
+    - {fileID: 8300000, guid: 9f893a50b13991b4c93336e5cb9cb06e, type: 3}
+    - {fileID: 8300000, guid: 6396772b6a051e44d88130e55bcca2a0, type: 3}
+    Volume: 0.72
+    Pitch: 1
+  - Name: Insect
+    Shape: 3
+    Clips:
+    - {fileID: 8300000, guid: 666d1e0342c16a748ab151e5d988f2d3, type: 3}
+    Volume: 0.72
+    Pitch: 1
+  - Name: Reptile
+    Shape: 4
+    Clips:
+    - {fileID: 8300000, guid: ee69a2954f8c8f64db5442c078cba401, type: 3}
+    - {fileID: 8300000, guid: da28c5b6df3db8043b4b48e7d72c2c98, type: 3}
+    - {fileID: 8300000, guid: 672ee800270ea064d9d4fd0f6ef282db, type: 3}
+    - {fileID: 8300000, guid: 9f893a50b13991b4c93336e5cb9cb06e, type: 3}
+    - {fileID: 8300000, guid: 6396772b6a051e44d88130e55bcca2a0, type: 3}
+    Volume: 0.6
+    Pitch: 1
+  - Name: Frog
+    Shape: 5
+    Clips:
+    - {fileID: 8300000, guid: f29b02f8de454264a82e7968007127d3, type: 3}
+    - {fileID: 8300000, guid: b1e9ba604c4539c4ca2ea3f09deb4ee5, type: 3}
+    - {fileID: 8300000, guid: b8fb77c617ff7db4db5e03c0eb139ee5, type: 3}
+    Volume: 0.84000003
+    Pitch: 1
+  - Name: Turtle
+    Shape: 6
+    Clips:
+    - {fileID: 8300000, guid: ee69a2954f8c8f64db5442c078cba401, type: 3}
+    - {fileID: 8300000, guid: da28c5b6df3db8043b4b48e7d72c2c98, type: 3}
+    - {fileID: 8300000, guid: 672ee800270ea064d9d4fd0f6ef282db, type: 3}
+    - {fileID: 8300000, guid: 9f893a50b13991b4c93336e5cb9cb06e, type: 3}
+    - {fileID: 8300000, guid: 6396772b6a051e44d88130e55bcca2a0, type: 3}
+    Volume: 0.66
+    Pitch: 1
+  MusicVolume: 0.4
+  MusicCrossfade: 2.5
+  MenuMusic:
+  - {fileID: 8300000, guid: 96415a4f3037c894ba6baa891a9dcc6f, type: 3}
+  GameMusic:
+  - {fileID: 8300000, guid: 904ea70a201404a4987b9fb78f3237eb, type: 3}
+  - {fileID: 8300000, guid: caf38118baf931c4baaba04e602d16f2, type: 3}
+  - {fileID: 8300000, guid: a64f0a96d0920f34c9c6b4b1717c5661, type: 3}
+  - {fileID: 8300000, guid: 9fa0cfb62ddf4584d8cf9646ef7ebea7, type: 3}
+  EndMusic:
+  - {fileID: 8300000, guid: 305c883be4152ae45a03d4ba4be89b78, type: 3}
+  AmbienceVolume: 0.3
+  Ambience: {fileID: 8300000, guid: 1cc28abe7cf13824b99a586e0401083c, type: 3}
